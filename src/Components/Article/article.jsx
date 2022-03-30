@@ -8,7 +8,7 @@ class Article extends React.Component {
     render() { 
         return (
             <div>
-                <h1>{this.props.art.title}</h1>
+                <h2>{this.props.art.title}</h2>
                 <p>{this.props.art.description}</p>
             </div>
         );
