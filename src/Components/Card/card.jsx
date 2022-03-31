@@ -1,15 +1,18 @@
 import React from "react";
-
+import './card.css'
 
 class Article extends React.Component {
     constructor(props){
         super(props)
+        this.state = {
+        }
     }
+
     render() { 
         return (
-            <div>
-                <h2>{this.props.art.title}</h2>
-                <p>{this.props.art.description}</p>
+            <div className="wrapper">
+                {this.props.info.meal}
+                <img src={this.props.info.image} alt="" />
             </div>
         );
     }

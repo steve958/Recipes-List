@@ -1,0 +1,13 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('http://cdn.shopify.com/s/files/1/0562/8326/7230/collections/everyday_meals.jpg?v=1631656746');
+  background-position: center;
+  background-size: cover;
+}
