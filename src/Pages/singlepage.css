@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.singleWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.smallWrapper {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+h3 {
+  font-size: 50px;
+  color: green;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+.easy-level {
+  font-size: 25px;
+  color: green;
+}
+
+.medium-level {
+  font-size: 25px;
+  color: lightblue;
+}
+
+.hard-level {
+  font-size: 25px;
+  color: lightcoral;
+}
+
+h6 {
+  font-size: 50px;
+  color: red;
+  font-family: 'Shadows Into Light', cursive;
+}

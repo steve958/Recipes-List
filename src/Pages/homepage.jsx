@@ -13,11 +13,11 @@ export class HomePage extends React.Component {
                 <Header></Header>
                 <div className="wrapper">
                     <h1 className="easy">Easy to make</h1>
-                {this.props.recipes.filter(e=> e.level < 3).map(e=><Card key={e.id} info={e}/>)}
+                {this.props.recipes.filter(e=> e.level < 3).map(e=><Card click = {this.props.calling} key={e.id} info={e}/>)}
                 <h1 className="medium">Medium to make</h1>
-                {this.props.recipes.filter(e=> e.level >= 3 && e.level < 4).map(e=><Card key={e.id} info={e}/>)}
+                {this.props.recipes.filter(e=> e.level >= 3 && e.level < 4).map(e=><Card click = {this.props.calling} key={e.id} info={e}/>)}
                 <h1 className="hard">Hard to make</h1>
-                {this.props.recipes.filter(e=> e.level === 4).map(e=><Card key={e.id} info={e}/>)}
+                {this.props.recipes.filter(e=> e.level === 4).map(e=><Card click = {this.props.calling} key={e.id} info={e}/>)}
                 </div>
                 <Footer></Footer>
             </div> 

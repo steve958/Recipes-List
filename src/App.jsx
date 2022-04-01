@@ -12,6 +12,10 @@ export class App extends React.Component {
         }
     } 
 
+    setSelectedRecipe(id){
+        this.setState({selectedRecipe: id})
+    }
+
     componentDidMount(){
         fetch(`https://6245a35c6b7ecf057c21cb31.mockapi.io/recipes`).then(res=> res.json()).then(data=> this.setState({information : data}))
     }
@@ -19,7 +23,7 @@ export class App extends React.Component {
     render(){
         return (
         <div>
-           {this.state.selectedRecipe ? <SinglePage/> : <HomePage recipes={this.state.information}/>}
+           {this.state.selectedRecipe ? <SinglePage recipe={this.state.information.find(e=> e.id === this.state.selectedRecipe)}/> : <HomePage calling = {this.setSelectedRecipe.bind(this)} recipes={this.state.information}/>}
         </div>
         )
     }
